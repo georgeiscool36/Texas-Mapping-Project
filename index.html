@@ -148,6 +148,14 @@ ol.refs li{padding-left:2.2em;text-indent:-2.2em;font-size:.92rem;overflow-wrap:
 .scene .t{font-family:var(--mono);font-size:.75rem;color:var(--accent2);letter-spacing:.06em}
 .scene ul{margin:0;padding-left:1.1em;font-size:.93rem}
 .scene .say{font-style:italic;color:var(--muted);font-size:.93rem}
+/* video */
+.video{position:relative;aspect-ratio:16/9;max-width:960px;border-radius:6px;overflow:hidden;background:#0a0e18}
+.video iframe,.video img{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.video a{display:block;position:absolute;inset:0;color:#fff;text-decoration:none}
+.video a::after{content:"";position:absolute;inset:0;background:rgba(10,14,24,.45)}
+.video .play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:10px;font-weight:700;font-size:1.1rem;text-align:center}
+.video .play b{width:76px;height:76px;border-radius:50%;background:var(--accent2);display:grid;place-items:center;font-size:1.8rem;padding-left:6px}
+.vlink{margin-top:12px;font-family:var(--mono);font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
 footer .wrap{padding-block:32px;font-size:.8rem;color:var(--muted)}
 
 @media (max-width:900px){
@@ -171,6 +179,7 @@ footer .wrap{padding-block:32px;font-size:.8rem;color:var(--muted)}
     <a href="#earth">5 · Hydro &amp; Geo</a>
     <a href="#facts">6 · Fun Facts</a>
     <a href="#references">7 · References</a>
+    <a href="#video">Video</a>
   </div>
 </nav>
 
@@ -383,6 +392,20 @@ footer .wrap{padding-block:32px;font-size:.8rem;color:var(--muted)}
   </div>
 </section>
 
+
+<section class="slide" id="video">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Part 2 · Tour-Guide Video</span>
+      <h2>Welcome to Texas!</h2>
+      <p class="lede">A welcome-center commercial for Texas covering the capital, festivals and fairs, food, and the state's top attractions.</p>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/yWyKMP3dtkg" title="Welcome to Texas tour-guide video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="vlink">https://www.youtube.com/watch?v=yWyKMP3dtkg</p>
+  </div>
+</section>
 
 <footer><div class="wrap">Texas Mapping Project · Earth Science · Photos from Wikimedia Commons under Creative Commons licenses, credited in the references.</div></footer>
 
